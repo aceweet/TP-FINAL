@@ -1,0 +1,77 @@
+/* global settings */
+
+* {
+    margin: 0;
+}
+
+/* navbar flexboxes and styling */
+
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+}
+
+.navcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.logocontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logocontainer img {
+    height: 75px;
+}
+
+.logocontainer p {
+    margin: 0;
+}
+
+.linkcontainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.linkcontainer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50vw;
+}
+
+.linkcontainer ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.linkcontainer ul li a {
+    text-decoration: none;
+}
+
+.logincontainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.logincontainer a {
+    text-decoration: none;
+    margin: 0 20px;
+}
+
