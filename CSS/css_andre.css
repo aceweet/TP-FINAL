@@ -1,3 +1,5 @@
+
+
 /* global settings */
 
 * {
@@ -8,24 +10,32 @@ body {
     background-color: #1e2124;
 }
 
+.background {
+    background-image: url(/IMG/landingpage/EFFN8TQW4AEOHjH.gif);
+    height: 100vw;
+    background-repeat: no-repeat;
+}
+
 /* navbar flexboxes and styling */
 
 .header {
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 .navbar {
     display: flex;
     flex-direction: row;
-    background-color: #1e2124;
+    padding-top: 5vh;
+/*     background-color: #1e2124; */
 }
 
 .navcontainer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100vw;
     padding-left: 100px;
     padding-right: 100px;
@@ -57,7 +67,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 50vw;
+    width: 30vw;
 }
 
 .linkcontainer ul li {
@@ -67,17 +77,45 @@ body {
 
 .linkcontainer ul li a {
     text-decoration: none;
+    color: white;
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .logincontainer {
     display: flex;
     flex-direction: row;
+    width: 15VW;
 }
 
 .logincontainer a {
     text-decoration: none;
     margin: 0 20px;
+    width: 15VW;
 }
+
+/* navbar link animations */
+
+  .float-on-hover {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .float-on-hover:hover,
+  .float-on-hover:focus,
+  .float-on-hover:active {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
 
 /* Landing page hero section */
 
@@ -96,5 +134,26 @@ body {
 
 .heroh1 h1,H2,P { 
     color: white;
+}
+
+.heroh1 h1 {
+    text-decoration: none;
+    color: white;
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5em;
+    color: #cab2fb;
+}
+
+.heroh1 h2 {
+    font-size: 2em;
+}
+
+.heroh1 H2, p {
+    font-family: "Baloo Chettan 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 
