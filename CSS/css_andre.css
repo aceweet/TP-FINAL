@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+body {
+    background-color: #1e2124;
+}
+
 /* navbar flexboxes and styling */
 
 .header {
@@ -14,7 +18,7 @@
 .navbar {
     display: flex;
     flex-direction: row;
-    background-color: aqua;
+    background-color: #1e2124;
 }
 
 .navcontainer {
@@ -73,5 +77,24 @@
 .logincontainer a {
     text-decoration: none;
     margin: 0 20px;
+}
+
+/* Landing page hero section */
+
+.herocontainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.heroimg {
+    width: 50vw;
+}
+
+.heroh1 {
+    margin: 20px 20px;
+}
+
+.heroh1 h1,H2,P { 
+    color: white;
 }
 
