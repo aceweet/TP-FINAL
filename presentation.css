@@ -1,9 +1,12 @@
 :root{
     --texte: #f1f1f1;
+    --background: #1e2124;
 }
 
 body{
-    background: #555;
+    background: var(--background);
+    font-family: "Baloo Chettan 2", sans-serif;
+    color: var(--texte);
 }
 
 .gallery{
@@ -14,7 +17,7 @@ body{
     grid-template-columns: repeat(auto-fill, 300px);    
     justify-content: center;
     grid-auto-rows: 300px;
-    gap:10px;
+    gap:20px;
     list-style-type: none;
 }
 
@@ -22,9 +25,23 @@ body{
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    border: 1px solid #b7b7b75a;
-    transition: transform 0.4s ease-out;
+    border: 1px solid #999;
+    transition: all 0.4s ease-out;
+}
 
+h3{
+    color: var(--texte);
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 0 10px;
+    background-color: #333333cf;
+    width: fit-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 5px;
 }
 
 .profile-img{
@@ -35,27 +52,20 @@ body{
 
 .side-social{
     position: absolute;
-    top: 0;
+    top: 25%;
     height: 100%;
     list-style-type: none;
+    padding: 0;
 }
 
-.side-social a {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    margin: 5px;
-    background-color: #1b1b1b;
-    border: 1px solid #999;
+.side-social a:nth-child(1),
+.side-social a:nth-child(2){
+    width: 50px;
+    height: 50px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translateX(calc(-100% - 10px));
-    transition: transform 0.2s ease-in-out;
-}
-
-.side-social a:hover{
-    background-color: #333;
+    margin: 5px 10px;
+    transform: translateX(calc(-100% - 5px));
+    transition: all 0.2s ease-in-out;
 }
 
 .side-social a img{
@@ -66,27 +76,17 @@ body{
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 10px;
     background-color: #333;
-    border-top: 1px solid #999;
+    border-top: 1px solid #fff;
     text-align: center;
     transform: translateY(100%);
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
-}
-
-.profile-name{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 5px;
-    color: var(--texte);
 }
 
 .profile-work{
-    font-size: 16px;
-    font-weight: 500;
-    font-style: italic;
-    color: var(--texte);
+    font-size: 1.2em;
+    font-weight: 600;
 }
 
 .profile-card:hover .profile-info, .profile-card:hover .side-social a{
