@@ -42,7 +42,8 @@ h5{
 }
 
 .profile-detail{
-    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
 }
 
 .profile-detail p{
@@ -51,8 +52,7 @@ h5{
 
 .profile-detail img{
     max-width: 100px;
-    border: 1px solid red;
-    object-position: left bottom;
+    margin: auto 0 0 0;
 }
 
 .name{
@@ -78,7 +78,7 @@ h5{
 
 .side-social{
     position: absolute;
-    top: 25%;
+    top: 5%;
     height: 100%;
     list-style-type: none;
     padding: 0;
