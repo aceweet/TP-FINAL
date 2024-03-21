@@ -14,6 +14,7 @@ body {
     background-image: url(/IMG/landingpage/EFFN8TQW4AEOHjH.gif);
     background-repeat: no-repeat;
     padding-bottom: 20vh;
+    background-size:cover;
 }
 
 /* button style and hover */
@@ -145,8 +146,8 @@ body {
 .herocontainer {
     display: flex;
     flex-direction: row;
-    padding: 0 10vw;
-    background-color: rgb(0 0 0 / 50%);
+    padding: 0 20%;
+    background-color: rgb(0 0 0 / 70%);
     margin-top: 10vh;
 }
 
@@ -224,3 +225,6 @@ h4 {
     color: white;
     margin-bottom: 5vh;
 }
+
+/* responsive media queries */
+
