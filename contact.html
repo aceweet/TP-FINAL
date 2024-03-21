@@ -1,75 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Font cdn -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400..800&family=Rubik+Mono+One&display=swap" rel="stylesheet">
-    <!-- Font cdn end -->
-    <!-- css -->
-    <link rel="stylesheet" href="/CSS/style_loic.css">
-    <link rel="stylesheet" href="/CSS/css_andre.css">
-    <link rel="stylesheet" href="/CSS/footer.css">
-    <!-- css end -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Présentation Coachs</title>
+    <link rel="stylesheet" href="presentation.css">
+    <!-- Font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400..800&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <!-- Font cdn end -->   
+    <!-- css -->
+    <link rel="stylesheet" href="style_loic.css"> 
+    <link rel="stylesheet" href="/CSS/css_andre.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/form.css">
+    <!-- css end -->
 </head>
+
 <body>
-    <article class="background">
-        <header>
-            <nav class="navbar">
-                <div class="navcontainer">
+    <header>
+        <nav class="navbar">
+            <div class="navcontainer">
 <!--                     <div class="logocontainer">
-                        <img src="/IMG/navbar/272127c4-8d19-4bd3-bd22-2b75ce94ccb4-512.webp" alt="">
-                        <p>
-                            Sitename hello
-                        </p>
-                    </div> -->
-                    <div class="linkcontainer">
-                        <ul>
-                            <li>
-                                <a class="float-on-hover" href="/index.html">
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a class="float-on-hover" href="/presentation_coach.html">
-                                    Coaches
-                                </a>
-                            </li>
-                            <li>
-                                <a class="float-on-hover" href="/contact.html">
-                                    Contact
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                    <img src="/IMG/navbar/272127c4-8d19-4bd3-bd22-2b75ce94ccb4-512.webp" alt="">
+                    <p>
+                        Sitename hello
+                    </p>
+                </div> -->
+                <div class="linkcontainer">
+                    <ul>
+                        <li>
+                            <a class="float-on-hover" href="/index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a class="float-on-hover" href="/presentation_coach.html">
+                                Coaches
+                            </a>
+                        </li>
+                        <li>
+                            <a class="float-on-hover" href="/contact.html">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 <!--                     <div class="logincontainer">
-                        <a href="">sign up</a>
-                        <a href="">login</a>
-                    </div> -->
-                </div>
-            </nav>
-        </header>
-        <section class="hero">
-            <div class="herocontainer">
-                <div>
-<!--                     <img class="heroimg" src="/IMG/landingpage/62dae18ff974602c2bb2a6e8_6-min.jpg" alt=""> -->
-                </div>
-                <div class="heroh1">
-                    <h1>We make winning easy</h1>
-                    <H2>We know what it's like to get stuck, with GG+ get <br> weekly coaching session and an online platform to <br> help you level up</H2>
-                    <P><i>2 free coaching session offered with your first purchase</i></P>
-                    <a href="/contact.html" class="bn1">Reserve a coaching session</a>
-                </div>
+                    <a href="">sign up</a>
+                    <a href="">login</a>
+                </div> -->
             </div>
-        </section>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+
+            <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+        <fieldset>
         
-    </article>
+        <!-- Form Name -->
+        <legend><center><h2><b>Reserve a coach</b></h2></center></legend><br>
+        
+        <!-- Text input-->
+        
+        <div class="form-group">
+          <label class="col-md-4 control-label">First Name</label>  
+          <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+            </div>
+          </div>
+        </div>
+        
+        <!-- Text input-->
+        
+        <div class="form-group">
+          <label class="col-md-4 control-label" >Last Name</label> 
+            <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+            </div>
+          </div>
+        </div>
+        
+          <div class="form-group"> 
+          <label class="col-md-4 control-label">Game</label>
+            <div class="col-md-4 selectContainer">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+            <select name="department" class="form-control selectpicker">
+              <option value="">Select your game</option>
+              <option>League of Legends</option>
+              <option>Rocket League</option>
+              <option >Valorant</option>
+              <option >Fortnite</option>
+              <option >Counter Strike 2</option>
+            </select>
+          </div>
+        </div>
+        </div>
+          
+        <div class="form-group"> 
+            <label class="col-md-4 control-label">Number of sessions</label>
+              <div class="col-md-4 selectContainer">
+              <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+              <select name="department" class="form-control selectpicker">
+                <option value="">Select quantity </option>
+                <option>1 hour</option>
+                <option>2 hours</option>
+                <option >5 hours</option>
+                <option >10 hours</option>
+                <option >20 hours</option>
+              </select>
+            </div>
+          </div>
+          </div>
+            
+        
+        <div class="form-group">
+          <label class="col-md-4 control-label">In game Username</label>  
+          <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input  name="user_name" placeholder="Username" class="form-control"  type="text">
+            </div>
+          </div>
+        </div>
+        
+        <!-- Text input-->
+        
+        <!-- Text input-->
+               
+        <div class="form-group">
+          <label class="col-md-4 control-label">Contact No.</label>  
+            <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+          <input name="contact_no" placeholder="(639)" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+        
+        <!-- Select Basic -->
+        
+        <!-- Button -->
+        <div>
+          <button type="button">Submit</button>
+        </div>
+        
+        </fieldset>
+        </form>
+        </div>
+            </div><!-- /.container -->
+    </main>
     <footer>
         <div id="item_1" class="footer">
             <article class="flex_items">
@@ -205,6 +295,5 @@
             <h4>GGPLUS.FR</h4>
         </div>
 </footer>
-
 </body>
 </html>
