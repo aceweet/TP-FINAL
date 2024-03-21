@@ -187,44 +187,5 @@ body {
     font-style: normal;
 }
 
-/* footer styling */
-
-h3{
-    text-decoration: none;
-    color: white;
-    font-family: "Rubik Mono One", monospace;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1em;
-}
-
-.flex_items ul li {
-    font-family: "Baloo Chettan 2", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    text-decoration: none;
-    list-style: none;
-    color: white;
-}
-
-.flex_items ul li a {
-    color: white;
-    font-size: 0.8em;
-}
-
-.footer {
-    padding: 5vh 20vw;
-}
-
-h4 {
-    font-family: "Rubik Mono One", monospace;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1em;
-    color: white;
-    margin-bottom: 5vh;
-}
-
 /* responsive media queries */
 
