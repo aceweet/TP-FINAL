@@ -1,0 +1,19 @@
+#success_message{ display: none;}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80vw;
+}
+
+.container {
+    width: fit-content;
+}

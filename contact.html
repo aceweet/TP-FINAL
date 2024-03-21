@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Page de présentation des coachs de GGPLUS">
     <title>Présentation Coachs</title>
     <link rel="stylesheet" href="presentation.css">
     <!-- Font cdn -->
@@ -15,9 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400..800&family=Rubik+Mono+One&display=swap" rel="stylesheet">
     <!-- Font cdn end -->   
     <!-- css -->
-    <link rel="stylesheet" href="/CSS/style_loic.css"> 
+    <link rel="stylesheet" href="style_loic.css"> 
     <link rel="stylesheet" href="/CSS/css_andre.css">
     <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/form.css">
     <!-- css end -->
 </head>
 
@@ -57,132 +57,109 @@
             </div>
         </nav>
     </header>
-
     <main>
-        <h1 class="main_title">Découvrez le coach qu'il vous faut</h1>
-        <ul class="gallery">
-            <li class="profile-card">
-                    <h2 class="profile-name">Luis</h2>
-                    <img src="/IMG/profiles coachs/Luis.webp" alt="profil Luis" class="profile-img">
-                <ul class="side-social">
-                    <li>
-                        <a href="#" class="discord-icon">
-                            <img src="svg/discord-round-color-icon.svg" alt="discord icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="twitter-icon">
-                            <img src="svg/twitter-circle-blue-logo-16617.svg" alt="twitter icon">
-                        </a>
-                    </li>
-                </ul>
-            </li>
+        <div class="container">
 
-            <li class="profile-detail">
-                <h3>LUIS</h3>
-                <h4>Rank : Challenger 1200 LP</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus velit, nam officiis quo deserunt tenetur ipsam, eaque voluptas neque saepe ex reiciendis esse quaerat ratione deleniti voluptatum debitis. Inventore, iure!Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus velit, nam officiis quo deserunt tenetur ipsam, eaque voluptas neque saepe ex reiciendis esse quaerat ratione deleniti voluptatum debitis. Inventore, iure!</p>
-                <img src="/IMG/Games PNG/lol.png" alt="league of legends">
-            </li>
-
-            <li class="profile-card">
-                    <h2 class="profile-name">Joseph</h2>
-                    <img src="/IMG/profiles coachs/Joseph.webp" alt="profil Joseph" class="profile-img">
-                <ul class="side-social">
-                    <li>
-                        <a href="#" class="discord-icon">
-                            <img src="svg/discord-round-color-icon.svg" alt="discord icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="twitter-icon">
-                            <img src="svg/twitter-circle-blue-logo-16617.svg" alt="twitter icon">
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="profile-detail">
-                    <h3>JOSEPH</h3>
-                    <h4>Rank : Grand Champion III</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus velit, nam officiis quo deserunt tenetur ipsam, eaque voluptas neque saepe ex reiciendis esse quaerat ratione deleniti voluptatum debitis. Inventore, iure!Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus velit, nam officiis quo deserunt tenetur ipsam, eaque voluptas neque saepe ex reiciendis esse quaerat ratione deleniti voluptatum debitis. Inventore, iure!</p>
-                    <img src="/IMG/Games PNG/rocket league.png" alt="rocket league">
-            </li>
-
-            <li class="profile-card">
-                    <h2 class="profile-name">Mélina</h2>
-                    <img src="/IMG/profiles coachs/Mel.webp" alt="profil Melina" class="profile-img">
-                <ul class="side-social">
-                    <li>
-                        <a href="#" class="discord-icon">
-                            <img src="svg/discord-round-color-icon.svg" alt="discord icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="twitter-icon">
-                            <img src="svg/twitter-circle-blue-logo-16617.svg" alt="twitter icon">
-                        </a>
-                    </li>
-                </ul>
-            </li>
+            <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+        <fieldset>
+        
+        <!-- Form Name -->
+        <legend><center><h2><b>Reserve a coach</b></h2></center></legend><br>
+        
+        <!-- Text input-->
+        
+        <div class="form-group">
+          <label class="col-md-4 control-label">First Name</label>  
+          <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+            </div>
+          </div>
+        </div>
+        
+        <!-- Text input-->
+        
+        <div class="form-group">
+          <label class="col-md-4 control-label" >Last Name</label> 
+            <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+            </div>
+          </div>
+        </div>
+        
+          <div class="form-group"> 
+          <label class="col-md-4 control-label">Game</label>
+            <div class="col-md-4 selectContainer">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+            <select name="department" class="form-control selectpicker">
+              <option value="">Select your game</option>
+              <option>League of Legends</option>
+              <option>Rocket League</option>
+              <option >Valorant</option>
+              <option >Fortnite</option>
+              <option >Counter Strike 2</option>
+            </select>
+          </div>
+        </div>
+        </div>
+          
+        <div class="form-group"> 
+            <label class="col-md-4 control-label">Number of sessions</label>
+              <div class="col-md-4 selectContainer">
+              <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+              <select name="department" class="form-control selectpicker">
+                <option value="">Select quantity </option>
+                <option>1 hour</option>
+                <option>2 hours</option>
+                <option >5 hours</option>
+                <option >10 hours</option>
+                <option >20 hours</option>
+              </select>
+            </div>
+          </div>
+          </div>
             
-            <li class="profile-detail">
-                <h3>MÉLINA</h3>
-                <h4>Rank : Immortal 3</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus velit, nam officiis quo deserunt tenetur ipsam, eaque voluptas neque saepe ex reiciendis esse quaerat ratione deleniti voluptatum debitis. Inventore, iure!Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus velit, nam officiis quo deserunt tenetur ipsam, eaque voluptas neque saepe ex reiciendis esse quaerat ratione deleniti voluptatum debitis. Inventore, iure!</p>
-                <img src="/IMG/Games PNG/valo.png" alt="valorant">
-            </li>
-
-            <li class="profile-card">
-                    <h2 class="profile-name">Tom</h2>
-                    <img src="/IMG/profiles coachs/Tom.webp" alt="profil Tom" class="profile-img">
-                <ul class="side-social">
-                    <li>
-                        <a href="#" class="discord-icon">
-                            <img src="svg/discord-round-color-icon.svg" alt="discord icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="twitter-icon">
-                            <img src="svg/twitter-circle-blue-logo-16617.svg" alt="twitter icon">
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="profile-detail">
-                <h3>TOM</h3>
-                <h4>Rank : Unreal</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus velit, nam officiis quo deserunt tenetur ipsam, eaque voluptas neque saepe ex reiciendis esse quaerat ratione deleniti voluptatum debitis. Inventore, iure!Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus velit, nam officiis quo deserunt tenetur ipsam, eaque voluptas neque saepe ex reiciendis esse quaerat ratione deleniti voluptatum debitis. Inventore, iure!</p>
-                <img src="/IMG/Games PNG/Fortnite.png" alt="Fortnite">
-            </li>
-
-            <li class="profile-card">
-                    <h2 class="profile-name">ETHAN</h2>
-                    <img src="/IMG/profiles coachs/Ethan.webp" alt="profil Ethan" class="profile-img">
-                <ul class="side-social">
-                    <li>
-                        <a href="#" class="discord-icon">
-                            <img src="svg/discord-round-color-icon.svg" alt="discord icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="twitter-icon">
-                            <img src="svg/twitter-circle-blue-logo-16617.svg" alt="twitter icon">
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="profile-detail">
-                <h3>ETHAN</h3>
-                <h4>Rank : Global Elite</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus velit, nam officiis quo deserunt tenetur ipsam, eaque voluptas neque saepe ex reiciendis esse quaerat ratione deleniti voluptatum debitis. Inventore, iure!Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus velit, nam officiis quo deserunt tenetur ipsam, eaque voluptas neque saepe ex reiciendis esse quaerat ratione deleniti voluptatum debitis. Inventore, iure!</p>
-                <img src="/IMG/Games PNG/cs2.png" alt="CS2">
-            </li>
-        </ul>
+        
+        <div class="form-group">
+          <label class="col-md-4 control-label">In game Username</label>  
+          <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input  name="user_name" placeholder="Username" class="form-control"  type="text">
+            </div>
+          </div>
+        </div>
+        
+        <!-- Text input-->
+        
+        <!-- Text input-->
+               
+        <div class="form-group">
+          <label class="col-md-4 control-label">Contact No.</label>  
+            <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+          <input name="contact_no" placeholder="(639)" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+        
+        <!-- Select Basic -->
+        
+        <!-- Button -->
+        <div>
+          <button type="button">Submit</button>
+        </div>
+        
+        </fieldset>
+        </form>
+        </div>
+            </div><!-- /.container -->
     </main>
-    
     <footer>
         <div id="item_1" class="footer">
             <article class="flex_items">
