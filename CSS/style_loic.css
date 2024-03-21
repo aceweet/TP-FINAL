@@ -14,21 +14,16 @@ footer{
     justify-content: center;
 }
 
-ul{
+.flex-item ul{
     list-style-type: none;
     padding: 0;
 }
 
-li{
+.flex-item ul li {
     padding: 5px;
-
 }
 
-p{
-    margin: 0 0 10px 0;
-}
-
-h3{
+.flex-item h3{
     text-transform: uppercase;
 }
 
@@ -36,6 +31,6 @@ a{
     text-decoration: none;
 }
 
-svg{
+.flex-item ul li svg{
     margin: 0;
 }

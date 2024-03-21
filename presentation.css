@@ -67,15 +67,17 @@ main{
 }
 
 .profile-detail h4{
-    font-size: 1.2em;
-    padding: 0;
-    margin: 0;
-}
-
-.profile-detail h5{
     margin: 0;
     font-size: 1em;
+    font-weight: 600;
     font-style: italic;
+    font-family: "Baloo Chettan 2", sans-serif; 
+}
+
+.profile-detail h3{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
 }
 
 .profile-detail p{
@@ -116,7 +118,7 @@ main{
     padding: 0;
 }
 
-.side-social a{
+.side-social li a{
     width: 50px;
     height: 50px;
     display: flex;
@@ -125,18 +127,18 @@ main{
     transition: all 0.1s ease-in-out;
 }
 
-.side-social a img{
+.side-social li a img{
     width: 80%;
 }
 
-.profile-card:hover .side-social a{
+.profile-card:hover .side-social li a{
     transform: translate(0);
 }
 
-.profile-card:hover .side-social a:nth-child(1){
+.profile-card:hover .discord-icon{
     transition-delay: 0.1s;
 }
-.profile-card:hover .side-social a:nth-child(2){
+.profile-card:hover .twitter-icon{
     transition-delay: 0.2s;
 }
 
@@ -157,7 +159,17 @@ main{
         box-shadow: none;
     }
 
-    .profile-info, .side-social a{
+    .profile-info, .side-social li a{
         transform: translate(0);
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .gallery{
+        grid-template-columns: 300px;
+        grid-auto-rows: auto;
+    }
+    .main_title{
+        text-align: center;
     }
 }
