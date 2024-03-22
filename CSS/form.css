@@ -1,5 +1,12 @@
 #success_message{ display: none;}
 
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
 body {
     display: flex;
     flex-direction: column;

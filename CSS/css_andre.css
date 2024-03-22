@@ -45,7 +45,8 @@ body {
 .header {
     display: flex;
     flex-direction: row;
-    position: relative;
+    /* position: relative; */
+    justify-content: center;
 }
 
 .navbar {
@@ -55,16 +56,20 @@ body {
 /*     background-color: #1e2124; */
 }
 
+.coaches {
+    margin: 0 50px;
+}
+
 .navcontainer {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    width: 100vw;
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 15px;
     padding-bottom: 15px;
+    margin: 0;
 }
 
 .logocontainer {
@@ -92,6 +97,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     width: 30vw;
+    margin: 0;
 }
 
 .linkcontainer ul li {
