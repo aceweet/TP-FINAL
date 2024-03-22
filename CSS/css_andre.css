@@ -70,6 +70,7 @@ body {
     padding-top: 15px;
     padding-bottom: 15px;
     margin: 0;
+    width: 100%;
 }
 
 .logocontainer {
@@ -98,6 +99,7 @@ body {
     justify-content: space-between;
     width: 30vw;
     margin: 0;
+    padding: 0;
 }
 
 .linkcontainer ul li {
@@ -195,3 +197,29 @@ body {
 
 /* responsive media queries */
 
+/* Desktops and laptops ----------- */
+@media only screen and (max-width : 1054px) {
+    /* Styles */
+    .navcontainer{
+        padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    }
+    }
+
+    @media only screen and (max-width : 796px) {
+        /* Styles */
+        .header {
+            font-size: smaller;
+        }
+        }
+
+    @media only screen and (max-width : 375px) {
+        /* Styles */
+        .header {
+            font-size: 7px;
+        }
+        
+        }       
